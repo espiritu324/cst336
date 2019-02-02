@@ -9,13 +9,18 @@ nav a{
     text-decoration: none;
     color: white;
 }
-nav:hover{
+
+main{
+    width:50%;
+    margin:0 auto; /*centers a section*/
+}
+nav:hover, #current{
     
     border-bottom:2px orange solid;
-    font-size: 2em;
+    font-size: 1.2em;
     transition: .9s;
 }
-figure, div{
+figure{
     float:left;
 }
 #me, #welcomeText {
@@ -28,7 +33,7 @@ header, main, nav, footer {
     text-align: center;
 }
 table{
-    margin: 0px auto;
+    margin:0px auto;
 }
 td{
     padding-right: 10px;
@@ -55,3 +60,19 @@ h1 {
     font-size: 4em;
     margin-bottom: 0px;
 }
+#logo{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+footer{
+    width:50%;
+    margin:0 auto; /*centers a section*/
+}
+#content{
+    width:50%;
+    margin:0 auto;
+}
+
