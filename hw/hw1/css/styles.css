@@ -31,12 +31,16 @@ header, main, nav, footer {
 h2{
     text-align:center;
     color:black;
+    text-decoration:underline;
 }
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 4em;
     margin-bottom: 0px;
     color:black;
+    text-decoration:underline;
+    letter-spacing: 3px;
+    text-shadow: 3px 1px gray;
 }
 footer{
     width:50%;
