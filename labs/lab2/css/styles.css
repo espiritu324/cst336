@@ -1,0 +1,41 @@
+.jumbotron {
+    background-color:#e0ecff;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+    color:black;
+    letter-spacing: 3px;
+    text-shadow: 3px 1px #efefef;
+}
+body {
+    text-align:center;
+    /*background-color: #aaaaaa;*/
+    background-image: url("../../lab2/img/bluenum.jpg");
+    background-size: cover;
+}
+
+#directions {
+    background-color:#b5d1ff;
+    font-size: 2em;    
+    width:750px;
+    height:200px;
+    margin:0 auto;
+    border-radius:20px;
+}
+#box{
+    background-color:#b5d1ff;
+    font-size: 1em;    
+    width:50%;
+    height:300px;
+    margin:0 auto;
+    border-radius:20px;
+}
+footer{
+    width:50%;
+    font-size: .5em; 
+    margin:0 auto; /*centers a section*/
+    background-color:#e0ecff
+    
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS Review </title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
+        <script>
+            
+            function doMagic(){
+                //alert("It's working!");
+                document.getElementById("langImage").src = "../imgs/languages_graph.jpg";
+                document.getElementById("message").innerHTML = "...now you don't";
+                document.getElementById("message").style.color = "red";
+                document.getElementById("reappearBtn").style.display ="inline";
+                document.getElementById("doMagicBtn").style.display ="none";
+            }
+            
+            function reappear(){
+                document.getElemenById("langImage").src="../imgs/languages.jpg";
+                document.getElementById("message").innerHTML ="Now you see me";
+                document.getElementById("message").style.color = "black";
+                document.getElementById("reappearBtn").style.display ="none";
+                document.getElementById("doMagicBtn").style.display ="inline";
+            }
+            
+        </script>
+        
+        <style>
+            #reappearBtn{
+                display: none;
+            }
+        </style>
+        
+    </head>
+    <body>
+            <img id="langImage" src="../imgs/languages.jpg">    <br>
+            <span id="message">Now you see me...</span>
+            <br>
+            <button id="doMagicBtn" onclick = "doMagic()">Do Magic</button>
+            <button id="reappearBtn"onclick="reappear()">Bring it back!</button>
+    </body>
+</html>
