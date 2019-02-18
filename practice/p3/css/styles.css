@@ -1,0 +1,25 @@
+body {
+    text-align:center;
+}
+#title{
+    background-color: grey;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+#playButton {
+    background-color: green;
+    color:white;
+    /*margin:0 auto;*/
+   /* display:flex;*/
+   /*text-align:center;*/
+}
+
+#row {
+    display: flex;
+    justify-content:center;
+}
+
+#jackpot{
+    letter-spacing: 5px;
+}

@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <!--Custom Styles-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        
+        <h1 id="title">Slot Machine</h1>
+          </head>
+    <body>
+        <button id="playButton">Play!</button>
+        
+        <div id="row">
+            <div id="image1">
+                
+            </div>
+            <div id="image2">
+                
+            </div>
+            <div id="image3">
+                
+            </div>
+        </div>
+        
+        
+        <h2 id="winning">
+            
+        </h2>
+        <h2 id="totalWinnings">
+            
+        </h2>
+        
+        
+        <script>
+            /* global $ */
+            
+            let imageArray = ["cherry", "grapes", "seven"];
+            let total = 0;
+            var jack = new Audio("audio/jackpot.m4a");
+           // let randomIndex = []; //Math.floor(Math.random() * 3)
+           // let randomImage = imageArray[randomIndex];
+            
+            
+            //$("#image1").html("<img src = 'img/" + randomImage + ".png' />");
+            
+             $("#playButton").on("click", function(){
+                 let randomIndex = new Array(3);
+                 
+                for(let i = 0; i < 3; i++){
+                    randomIndex[i] = Math.floor(Math.random() * 3);
+                } 
+                
+                $("#image1").html("<img src ='img/"+imageArray[randomIndex[0]]+".png' />");
+                 $("#image2").html("<img src ='img/"+imageArray[randomIndex[1]]+".png' />");
+                  $("#image3").html("<img src = 'img/"+imageArray[randomIndex[2]]+".png' />");
+               if(randomIndex[0]==randomIndex[1] && randomIndex[0]==randomIndex[2]){
+                   if(randomIndex[0]==0){
+                       $("#winning").html("You won $100");
+                       total += 100;
+                   }else if(randomIndex[0]==1){
+                       $("#winning").html("You won $300");
+                       total += 300;
+                   }else if(randomIndex[0]==2){
+                      // $("#jackpot").html("JACKPOT!!");
+                       $("#winning").html("JACKPOT!! <br/>" + "You won $500");
+                       jack.play();
+                       total += 500;
+                   }
+                   $("#totalWinnings").html("Total Winnings $" + total);
+                   
+               }else{
+                    $("#winning").html("Try Again.");
+                
+                    $("#totalWinnings").html("Total Winnings $" + total);
+               }
+             });
+        </script>
+    </body>
+</html>
