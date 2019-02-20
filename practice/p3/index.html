@@ -18,25 +18,13 @@
         <button id="playButton">Play!</button>
         
         <div id="row">
-            <div id="image1">
-                
-            </div>
-            <div id="image2">
-                
-            </div>
-            <div id="image3">
-                
-            </div>
+            <div id="image1"></div>
+            <div id="image2"></div>
+            <div id="image3"></div>
         </div>
         
-        
-        <h2 id="winning">
-            
-        </h2>
-        <h2 id="totalWinnings">
-            
-        </h2>
-        
+        <h2 id="winning"></h2>
+        <h2 id="totalWinnings"></h2>
         
         <script>
             /* global $ */
@@ -44,10 +32,9 @@
             let imageArray = ["cherry", "grapes", "seven"];
             let total = 0;
             var jack = new Audio("audio/jackpot.m4a");
+            
            // let randomIndex = []; //Math.floor(Math.random() * 3)
            // let randomImage = imageArray[randomIndex];
-            
-            
             //$("#image1").html("<img src = 'img/" + randomImage + ".png' />");
             
              $("#playButton").on("click", function(){
@@ -56,7 +43,6 @@
                 for(let i = 0; i < 3; i++){
                     randomIndex[i] = Math.floor(Math.random() * 3);
                 } 
-                
                 $("#image1").html("<img src ='img/"+imageArray[randomIndex[0]]+".png' />");
                  $("#image2").html("<img src ='img/"+imageArray[randomIndex[1]]+".png' />");
                   $("#image3").html("<img src = 'img/"+imageArray[randomIndex[2]]+".png' />");
