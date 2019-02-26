@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Wedding Stuff </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+        <h1>Wedding Questions</h1>
+        <div id="party"></div>
+        <span id="groomName">Full name of Groom?</span></br>
+        <input type="text" id="q1"></br></br>
+        <span id="brideName">Full name of Bride?</span></br>
+        <input type="text" id="q2"></br></br>
+        
+        <span id="quan">Number of People attending?</span>
+        <input type="radio" name="q3" id="25people" value="25"><label for="25people">25 </label>
+        <input type="radio" name="q3" id="50people" value="50"><label for="50people">50 </label>
+        <input type="radio" name="q3" id="100people" value="100"><label for="100people">100</label>
+        <input type="radio" name="q3" id="200people" value="200"><label for="200people">200</label>
+        </br></br>
+        
+        <span id="meal">Select Type of meal desired for reception.</span>
+        <select id="q4">
+            <option value="">Select One</option>
+            <option>Casual Lunch Buffet</option>
+            <option>Fancy Dinner Buffet</option>
+            <option>Casual Lunch Plated Meal</option>
+            <option>Fancy Dinner Plated Meal</option>
+        </select>
+        </br>
+        <div id="mealSelection"></div>
+        
+        <span id="markImg5">Choose your venue: </span></br>
+        <div><input type="image" src="img/Disneyland_Resort_Wedding.jpg" alt="Disneyland Resort"
+        class="active" id="DisneylandResort"></br>Disneyland Resort</div>
+        <div><img src="img/Disneyland_Wedding.jpg" alt="Disneyland" class="active" id="Disneyland"></br>Disneyland Castle</div>
+        <div><img src="img/Fairview_Napa_Wedding.jpg" alt="Napa" class="active" id="Napa"></br>Fairview Napa</div>
+        <div><img src="img/Hawaii_Wedding.jpg" alt="Hawaii" class="active" id="Hawaii"></br>Hawaii</div>
+        <div id = "q5_feedback"></div>
+        
+        
+        
+        <button id="submitButton"> Submit </button>
+        <script src="js/functions.js"></script>
+    </body>
+    
+    
+    <footer>
+            <hr>
+            CST 336 Internet Programming. 2019 &copy; Espiritu <br />
+            <strong>Disclaimer:</strong> The information on this webpage is used only for
+            academic purposes only. <br />
+             <img id="logo" src="img/Round-CSUMB-logo.png" alt="csumb-logo" />
+            <img id="buddy" src="img/buddy_verified.png" alt="csumb-logo" />
+        </footer>
+</html>
