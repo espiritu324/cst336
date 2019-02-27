@@ -10,10 +10,12 @@
     <body>
         <h1>Wedding Questions</h1>
         <div id="party"></div>
-        <span id="groomName">Full name of Groom?</span></br>
+        <span id="groomName">First name of Groom?</span></br>
         <input type="text" id="q1"></br></br>
-        <span id="brideName">Full name of Bride?</span></br>
+        <span id="brideName">First name of Bride?</span></br>
         <input type="text" id="q2"></br></br>
+        <span id="lastName">Last name of Groom?</span></br>
+        <input type="text" id="q6"></br></br>
         
         <span id="quan">Number of People attending?</span>
         <input type="radio" name="q3" id="25people" value="25"><label for="25people">25 </label>
@@ -33,27 +35,81 @@
         </br>
         <div id="mealSelection"></div>
         
-        <span id="markImg5">Choose your venue: </span></br>
-        <div><input type="image" src="img/Disneyland_Resort_Wedding.jpg" alt="Disneyland Resort"
+        <span id="venueChoice">Choose your venue: </span></br>
+        <div id="venueImages">
+        <div id="cell"><input type="image" src="img/Disneyland_Resort_Wedding.jpg" alt="Disneyland Resort"
         class="active" id="DisneylandResort"></br>Disneyland Resort</div>
-        <div><img src="img/Disneyland_Wedding.jpg" alt="Disneyland" class="active" id="Disneyland"></br>Disneyland Castle</div>
-        <div><img src="img/Fairview_Napa_Wedding.jpg" alt="Napa" class="active" id="Napa"></br>Fairview Napa</div>
-        <div><img src="img/Hawaii_Wedding.jpg" alt="Hawaii" class="active" id="Hawaii"></br>Hawaii</div>
+        <div id="cell"><input type="image" src="img/Disneyland_Wedding.jpg" alt="Disneyland" class="active" id="Disneyland"></br>Disneyland Castle</div>
+        <div id="cell"><input type="image" src="img/Fairview_Napa_Wedding.jpg" alt="Napa" class="active" id="Napa"></br>Fairview Napa</div>
+        <div id="cell"><input type="image" src="img/Hawaii_Wedding.jpg" alt="Hawaii" class="active" id="Hawaii"></br>Hawaii</div>
+        </div>
+        </br>
         <div id = "q5_feedback"></div>
         
+        <div id="totalPrice"></div>
         
         
         <button id="submitButton"> Submit </button>
-        <script src="js/functions.js"></script>
+        <!--<script src="js/functions.js"></script>-->
+                <script>/*global $*/
+            var partyNames, numPeople, mealPlan, mealPrice, mealChoice;
+            var lunchBuffet = 50, dinnerBuffet = 120, lunchPlate = 35, dinnerPlate = 75, venuePrice=0, totalPrice=0;
+        
+                     let q5_response = "";
+                           $(".active").on( "click", function() {
+                                  $(".active").css("background-color","");
+                                  $(this).css("background-color","blue");
+                                  $(this).css("padding","10px");
+                                  //alert($(this).attr("id"));
+                                  q5_response = $(this).attr("id");
+                            });
+                
+         $("#submitButton").on( "click", function() {
+             
+            partyNames = $("#q1").val() + " & " + $("#q2").val() + " " +$("#q6").val()+  "'s Wedding Plans";
+             $("#party").html("<h2>"+partyNames+"</h2>");
+             
+             numPeople = $("input[name=q3]:checked").val();
+             //alert(numPeople);
+             
+             mealPlan =  $("#q4").val();
+             if(mealPlan=="Casual Lunch Buffet"){
+                 mealPrice = lunchBuffet * numPeople;
+             }else if(mealPlan=="Fancy Dinner Buffet"){
+                 mealPrice = dinnerBuffet * numPeople;
+             }else if(mealPlan=="Casual Lunch Plated Meal"){
+                 mealPrice = lunchPlate * numPeople;
+             }else if(mealPlan=="Fancy Dinner Plated Meal"){
+                 mealPrice = dinnerPlate * numPeople;
+             }
+             //alert(mealPrice);
+              mealChoice = "You selected: " + mealPlan + " at the price of $" + mealPrice/numPeople + " each with a total of $" + 
+              mealPrice + " for you recepetion";
+               $("#mealSelection").html(mealChoice);
+              
+             if(q5_response=="DisneylandResort"){
+                 venuePrice = 15000;
+             }else if(q5_response=="Disneyland"){
+                 venuePrice = 106000;
+             }else if(q5_response=="Napa"){
+                 venuePrice = 8000;
+             }else if(q5_response=="Hawaii"){
+                 venuePrice = 15000;
+             } 
+             totalPrice = mealPrice + venuePrice;
+              $("#totalPrice").html("Your total wedding package would cost: $"+totalPrice);
+         });</script>
+        
     </body>
     
     
     <footer>
+        </br>
             <hr>
             CST 336 Internet Programming. 2019 &copy; Espiritu <br />
             <strong>Disclaimer:</strong> The information on this webpage is used only for
             academic purposes only. <br />
              <img id="logo" src="img/Round-CSUMB-logo.png" alt="csumb-logo" />
             <img id="buddy" src="img/buddy_verified.png" alt="csumb-logo" />
-        </footer>
+    </footer>
 </html>

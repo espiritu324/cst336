@@ -2,13 +2,14 @@
 var partyNames, numPeople, mealPlan, mealPrice, mealChoice;
 var lunchBuffet = 50, dinnerBuffet = 120, lunchPlate = 35, dinnerPlate = 75;
 
-let q5_response = "";
-       $(".active").on( "click", function() {
-             $(".active").css("background","");
-             $(this).css("background","yellow");
-             alert($(this).attr("id"));
-             q5_response = $(this).attr("id");
-        });
+             let q5_response = "";
+                   $(".active").on( "click", function() {
+                          $(".active").css("background-color","");
+                          $(this).css("background-color","yellow");
+                          $(this).css("padding","10px");
+                          alert($(this).attr("id"));
+                          q5_response = $(this).attr("id");
+                    });
         
  $("#submitButton").on( "click", function() {
      
@@ -29,9 +30,9 @@ let q5_response = "";
          mealPrice = dinnerPlate * numPeople;
      }
      //alert(mealPrice);
-     mealChoice = "You selected: " + mealPlan + " at the price of $" + mealPrice/numPeople + " each with a total of $" + 
-     mealPrice + " for you recepetion";
-      $("#mealSelection").html(mealChoice);
+      mealChoice = "You selected: " + mealPlan + " at the price of $" + mealPrice/numPeople + " each with a total of $" + 
+      mealPrice + " for you recepetion";
+       $("#mealSelection").html(mealChoice);
       
       
  });

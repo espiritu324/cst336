@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          
+          <script>
+              /*global $*/
+              
+              $(document).ready(function(){
+                  
+                  $("#username1").change(function(){
+                      $.ajax({
+                        
+                        type: "GET",
+                        url: "checkUsername_text.php",
+                        data: { "#usernanme":$("#username1").val() },
+                        success: function(data,status) {
+                        //alert(data);
+                        $("#username1Error").html(data);
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                        });//ajax
+                  })
+                  
+              })
+          </script>
+    </head>
+    
+    <body>
+        <legend>
+            Sign up
+        </legend>
+        
+        First Name: <input type="text" id="firstName" name="firstName"/></br>
+        Last Name: <input type="text" id="lastName" name="lastName"/></br>
+        
+        Username: <input type="text" id="firstName" name="firstName"/></br>
+        <span id="username1Error"></span></br>
+        Username: <input type="text" id="firstName" name="firstName"/></br>
+        <span id="username2Error" class="error"></span></br>
+        
+        Password: <input type="password" id"password"></br>
+        
+        <button>Sign Up!</button>
+    </body>
+    
+</html>
