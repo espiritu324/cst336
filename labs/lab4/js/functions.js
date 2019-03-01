@@ -20,7 +20,7 @@ $(function() {
         });
     });
     
-    $("#zip").on("change", validateZip);
+    $("#zipCode").on("change", validateZip);
     $("#username").on("change", validateUser);
     $("#pass").on("change", validatePassword);
     $("#pass-confirm").on("change", confirmPassword);
@@ -41,9 +41,9 @@ function validateZip() {
         type: "GET",
         url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
         dataType: "json",
-        data: { "zip": $("#zip").val() },
+        data: { "zipCode": $("#zipCode").val() },
         success: function(data, status) {
-            if (typeof data["zip"] === "undefined") {
+            if (typeof data["zipCode"] === "undefined") {
                 $("#zip-error").show();
                 $("#city").html("");
                 $("#lat").html("");

@@ -30,8 +30,8 @@
             <span id="zip-error"></span>
             <input type="number" id="zipCode" class="textBox"/></br></br>
             <div id="city" class="leftText">City:     </div></br></br>
-            <div id="latitude" class="leftText">Latitude:     </div></br></br>
-            <div id="longitude" class="leftText">Longitude:     </div></br></br>
+            <div id="lat" class="leftText">Latitude:     </div></br></br>
+            <div id="long" class="leftText">Longitude:     </div></br></br>
     <!--State-->
             <div id="state" class="leftText">State     
             <select id="stateInput">
@@ -42,10 +42,8 @@
             </select>
             </div></br>
     <!--County-->
-            <div id="county" class="leftText">County     
-            <select id="countyInput">
-            <option value="">Select One</option>
-            <!--give options here-->
+            <div id="countyID" class="leftText">County     
+            <select id="county">
             </select>
             </div>
         </div>
@@ -56,10 +54,10 @@
             <input type="text" id="userName" class="textBox"/>
             <span id="username-feedback"></span></br></br>
             </br><span class="text">Password</span></br>
-            <input type="password" id="pass" class="textBox"/>
+            <input type="password" id="pass" class="textBox"/></br>
             <span id="pass-feedback" class="text-danger"></span></br></br>
             </br><span class="text">Confirm Password</span></br>
-            <input type="password" id="secondPassword" class="textBox"/>
+            <input type="password" id="secondPassword" class="textBox"/></br>
             <span id="pass-confirm-feedback" class="text-danger"></span></br></br>
             </br></br>
             <button id="submitButton"> Submit </button>
