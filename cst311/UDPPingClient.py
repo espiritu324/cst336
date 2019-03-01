@@ -13,8 +13,6 @@ UDP_portNum = 12000
 
 clientSocket = socket.socket(AF_INET,SOCK_DGRAM) 
 clientSocket.settimeout(1) #set timeout to 1 sec
-clientTime = socket.socket(AF_INET,SOCK_DGRAM) 
-clientTime.settimeout(1) #set timeout to 1 sec
 
 sequence_num = 1 #keeps track of number of packets
 RTT =[] #keeps track of Round Trip Time for each packet
@@ -23,7 +21,6 @@ while sequence_num<=10:
     start=str(time.time())
     message = str(sequence_num)
     clientSocket.sendto(message.encode('utf-8'),(IP_ADDRESS, UDP_portNum))
-    clientTime.sendto(start.encode('utf-8'))
     EstimateRTT = 0
     i = 0
 

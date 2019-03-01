@@ -3,128 +3,70 @@
 <head>
 <title> Sign Up Page </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>
-    
-    $(document).ready( function(){
-        
-        $("#state").on("change", function() {
-            //alert($("#state").val());
-            
-            $.ajax({
-
-                type: "GET",
-                url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
-                dataType: "json",
-                data: { "state": $("#state").val() },
-                success: function(data,status) {
-                    
-                  //alert(data[0].county);
-                  $("#county").html("<option> Select One </option>");
-                  for (let i=0; i < data.length; i++){
-                      
-                      $("#county").append("<option>" + data[i].county + "</option>");
-                      
-                  }
-                  
-                
-                },
-                complete: function(data,status) { //optional, used for debugging purposes
-                //alert(status);
-                }
-                
-            });//ajax
-            
-            
-        });
-        
-        $("#user").on("change", function(){
-             $.ajax({
-                type: "GET",
-                url: "http://myspace.csumb.edu/~milara/ajax/username/usernameLookup.php",
-                dataType: "json",
-                data: { "username": $("#user").val() },
-                success: function(data,status) {
-                    if(data.available == "true"){
-                     $("#userAv").html("Your username is available.");
-                     $("#userAv").css("color", "green");
-                    }else{
-                        $("#userAv").html("Your username is not available.");
-                        $("#userAv").css("color", "red");
-                    }
-                
-                }
-             });//ajax
-        });
-        
-        $("#zipCode").on("change", function(){
-            
-            //alert(  $("#zipCode").val()  );
-            
-            $.ajax({
-                type: "GET",
-                url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
-                dataType: "json",
-                data: { "zip": $("#zipCode").val() },
-                success: function(data,status) {
-                  //alert(data.city);
-                  $("#city").html(data.city);
-                  $("#lat").html(data.latitude);
-                  $("#long").html(data.longitude);
-                
-                },
-                error: function(data,status){
-                    $("#zipError").html("Incorrect zipcode entered.");
-                },
-                complete: function(data,status) { //optional, used for debugging purposes
-                  // alert(status);
-                }
-                
-            });//ajax
-            
-            
-        });//zipCode
-        
-    } ); //document.ready()
-    
-        
-    
-</script>
-
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/functions.js"></script>
 </head>
+
 <body>
-
-<h1> Sign Up Form </h1>
-
-        <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br> 
-        Last Name: <input type="text"><br> 
-        Email: <input type="text"><br> 
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input type="text" id="zipCode"></span><span id="zipError"></span><br>
-        City: <span id="city">
-        <br>
-        Latitude: <div id="lat"></div>
-        <br>
-        Longitude:<div id="long"></div>
-        <br><br>
-        State: 
-        <select id="state">
-           <option> Select One </option> 
-           <option value="ca"> California </option>
-           <option value="ny"> New York </option>
-           <option value="tx"> Texas </option>
-        </select>
-        <br>
-        
-        Select a County: <select id="county"></select><br>
-        
-        Desired Username: <input type="text" id="user"></span><span id="userAv"></span><br>
-        Password: <input type="password"><br>
-        Type Password Again: <input type="password"><br>
-        <input type="submit" value="Sign up!">
-        </fieldset>
-
+    <h3>Sign Up Page</h3>
+<!--Arranges into cells-->
+    <div id="format">
+<!--First Column-->
+        <div id="cell1">
+            <h1>Information</h1>
+           </br></br><span class="text">First Name</span></br>
+            <input type="text" id="firstName" class="textBox"/></br></br>
+            <span class="text">Last Name</span></br>
+            <input type="text" id="lastName" class="textBox"/></br></br>
+            <span class="text">Email</span></br>
+            <input type="text" id="email" class="textBox"/></br></br>
+            <span class="text">Phone Number</span></br>
+            <input type="text" id="phoneNum" class="textBox"/></br></br>
+        </div>
+<!--Second Column-->
+        <div id="cell2">
+            <h1>Location</h1>
+            </br></br><span class="text">Zip Code</span></br>
+            <span id="zip-error"></span>
+            <input type="number" id="zipCode" class="textBox"/></br></br>
+            <div id="city" class="leftText">City:     </div></br></br>
+            <div id="latitude" class="leftText">Latitude:     </div></br></br>
+            <div id="longitude" class="leftText">Longitude:     </div></br></br>
+    <!--State-->
+            <div id="state" class="leftText">State     
+            <select id="stateInput">
+            <option value="">Select One</option>
+            <option>California</option>
+            <option>New York</option>
+            <option>Texas</option>
+            </select>
+            </div></br>
+    <!--County-->
+            <div id="county" class="leftText">County     
+            <select id="countyInput">
+            <option value="">Select One</option>
+            <!--give options here-->
+            </select>
+            </div>
+        </div>
+<!--Third Column-->
+        <div id="cell3">
+            <h1>Account</h1>
+             </br></br><span class="text">Username</span></br>
+            <input type="text" id="userName" class="textBox"/>
+            <span id="username-feedback"></span></br></br>
+            </br><span class="text">Password</span></br>
+            <input type="password" id="pass" class="textBox"/>
+            <span id="pass-feedback" class="text-danger"></span></br></br>
+            </br><span class="text">Confirm Password</span></br>
+            <input type="password" id="secondPassword" class="textBox"/>
+            <span id="pass-confirm-feedback" class="text-danger"></span></br></br>
+            </br></br>
+            <button id="submitButton"> Submit </button>
+        </div>
+    </div>
+    
+    
 </body>
+
 </html>

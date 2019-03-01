@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    background-color:#C5E6F8;
+}
+#cell1, #cell2, #cell3{
+    float: left;
+    height:500px;
+    width: 33%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#cell1{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50pX;
+}
+#cell3{
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50pX;
+}
+#format{
+    margin: auto 0;
+    display:flex;
+    padding-top: -300px;
+}
+.text{
+    font-size: 15pt;
+}
+.textBox{
+    height:25px;
+    width:200px;
+    border:.75px solid black;
+    border-radius:5px;
+}
+.leftText{
+    font-size: 15pt;
+    text-indent: 50px;
+    text-align: left;
+    color:black;
+}
+#stateInput{
+    margin-left: 200px;
+}
+#countyInput{
+    margin-left: 181px;
+}
+h1{
+    font-size: 18pt;
+    color:#2a68cc;
+    letter-spacing: 3px;
+    text-decoration: underline #4875bf;
+    text-shadow: .75px .75px black;
+}
+#submitButton{
+    height:50px;
+    width:125px;
+    color:white;
+    font-size:18pt;
+    border-radius: 10px;
+    background-color: #4a82e0;
+}
+h3{
+    font-size: 25pt;
+    color:white;
+    text-decoration: underline black;
+    letter-spacing: 3px;
+    padding-top: 75px;
+    text-shadow: 1.5px 1.5px black;
+    padding-bottom: -300px;
+}
