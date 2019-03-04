@@ -1,12 +1,12 @@
 /*global $*/
 var validZip, validUser, validPass, validConfirm;
 
-$(function() {
     $("#zip-error").hide();
     $("#password-feedback").hide();
     
     $("#state").on("change", function() {
         $.ajax({
+            
             type: "GET",
             url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
             dataType: "json",
@@ -34,7 +34,7 @@ $(function() {
             alert("Your account was successfully created!");
     });
     
-});
+
 
 function validateZip() {
     $.ajax({
