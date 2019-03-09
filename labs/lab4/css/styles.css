@@ -1,70 +1,45 @@
 body {
-    text-align: center;
-    background-color:#C5E6F8;
-}
-#cell1, #cell2, #cell3{
-    float: left;
-    height:500px;
-    width: 33%;
-    border: 1px solid black;
-    background-color: white;
+    font-family: "Roboto";
+    background-color: #f6f6f6;
 }
 
-#cell1{
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50pX;
+h1 {
+    margin-bottom: .5em;
 }
-#cell3{
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50pX;
-}
-#format{
-    margin: auto 0;
-    display:flex;
-    padding-top: -300px;
-}
-.text{
-    font-size: 15pt;
-}
-.textBox{
-    height:25px;
-    width:200px;
-    border:.75px solid black;
-    border-radius:5px;
-}
-.leftText{
-    font-size: 15pt;
-    text-indent: 50px;
-    text-align: left;
-    color:black;
-}
-#stateInput{
-    margin-left: 200px;
-}
-#countyInput{
-    margin-left: 181px;
-}
-h1{
-    font-size: 18pt;
-    color:#2a68cc;
-    letter-spacing: 3px;
-    text-decoration: underline #4875bf;
-    text-shadow: .75px .75px black;
-}
-#submitButton{
-    height:50px;
-    width:125px;
-    color:white;
-    font-size:18pt;
+
+.card {
+    margin: 5em auto;
+    padding: 2em;
     border-radius: 10px;
-    background-color: #4a82e0;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
 }
-h3{
-    font-size: 25pt;
-    color:white;
-    text-decoration: underline black;
-    letter-spacing: 3px;
-    padding-top: 75px;
-    text-shadow: 1.5px 1.5px black;
-    padding-bottom: -300px;
+
+.m-field {
+    margin: 1em 0;
+}
+
+input:not([type="submit"]) {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: .5s;
+}
+
+input:hover {
+    border: 1px solid #007bff;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+input.btn[type="submit"] {
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+input.btn[type="submit"]:hover {
+    background-color: #1e8aff;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15);
 }

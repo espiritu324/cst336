@@ -47,8 +47,65 @@
                         }
                     
                     });//ajax  
-                });
-            });
+                });//username2 change
+                
+                
+                 $("#password").on("click", function(){
+                    
+                    //alert("hi");
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "api/strongPwdAPI.php",
+                        dataType: "json",
+                        data: {"length" : "10" },
+                        success: function(data,status) {
+                          
+                          alert(data.suggestedPwd);
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                }); //passwordClick 
+                
+                
+             $("#password").on("change", function(){
+                    
+                    //alert("hi");
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "api/validatePwd.php",
+                        dataType: "json",
+                        data: {"username" : $("#username1").val(),
+                               "pwd" : $("#password").val()
+                        },
+                        success: function(data,status) {
+                          
+                          alert(data);
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                }); //passwordClick                
+                    
+            });//documentReady
+            
+            
+            
+           
+            
+            
         </script>
     </head>
     

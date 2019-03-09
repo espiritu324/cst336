@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sign Up Page </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+    <h3>Sign Up Page</h3>
+<!--Arranges into cells-->
+    <div id="format">
+<!--First Column-->
+        <div id="cell1">
+            <h1>Information</h1>
+           </br></br><span class="text">First Name</span></br>
+            <input type="text" id="firstName" class="textBox"/></br></br>
+            <span class="text">Last Name</span></br>
+            <input type="text" id="lastName" class="textBox"/></br></br>
+            <span class="text">Email</span></br>
+            <input type="text" id="email" class="textBox"/></br></br>
+            <span class="text">Phone Number</span></br>
+            <input type="text" id="phoneNum" class="textBox"/></br></br>
+        </div>
+<!--Second Column-->
+        <div id="cell2">
+            <h1>Location</h1>
+            </br></br><span class="text">Zip Code</span></br>
+            <span id="zip-error"></span>
+            <input type="number" id="zipCode" class="textBox"/></br></br>
+            <div id="city" class="leftText">City:     </div></br></br>
+            <div id="lat" class="leftText">Latitude:     </div></br></br>
+            <div id="long" class="leftText">Longitude:     </div></br></br>
+    <!--State-->
+            <div id="stateID" class="leftText">State     
+            <select id="state">
+            <option value="">Select One</option>
+            <option>California</option>
+            <option>New York</option>
+            <option>Texas</option>
+            </select>
+            </div></br>
+    <!--County-->
+            <div id="countyID" class="leftText">County     
+            <select id="county">
+            </select>
+            </div>
+        </div>
+<!--Third Column-->
+        <div id="cell3">
+            <h1>Account</h1>
+             </br></br><span class="text">Username</span></br>
+            <input type="text" id="userName" class="textBox"/>
+            <span id="username-feedback"></span></br></br>
+            </br><span class="text">Password</span></br>
+            <input type="password" id="pass" class="textBox"/></br>
+            <span id="pass-feedback" class="text-danger"></span></br></br>
+            </br><span class="text">Confirm Password</span></br>
+            <input type="password" id="secondPassword" class="textBox"/></br>
+            <span id="pass-confirm-feedback" class="text-danger"></span></br></br>
+            </br></br>
+            <button id="submitButton"> Submit </button>
+        </div>
+    </div>
+    
+    
+</body>
+<footer>
+        </br>
+            <hr>
+            CST 336 Internet Programming. 2019 &copy; Espiritu <br />
+            <strong>Disclaimer:</strong> The information on this webpage is used only for
+            academic purposes only. <br />
+             <img id="logo" src="img/Round-CSUMB-logo.png" alt="csumb-logo" />
+            <img id="buddy" src="img/buddy_verified.png" alt="csumb-logo" />
+    </footer>
+</html>

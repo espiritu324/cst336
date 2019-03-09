@@ -1,13 +1,12 @@
-/* global $ */
-
+/*global $*/
 var validZip, validUser, validPass, validConfirm;
 
-$(function() {
     $("#zip-error").hide();
     $("#password-feedback").hide();
     
     $("#state").on("change", function() {
         $.ajax({
+            
             type: "GET",
             url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
             dataType: "json",
@@ -19,9 +18,10 @@ $(function() {
                 }
             }
         });
+        alert("hi");
     });
     
-    $("#zip").on("change", validateZip);
+    $("#zipCode").on("change", validateZip);
     $("#username").on("change", validateUser);
     $("#pass").on("change", validatePassword);
     $("#pass-confirm").on("change", confirmPassword);
@@ -35,16 +35,16 @@ $(function() {
             alert("Your account was successfully created!");
     });
     
-});
+
 
 function validateZip() {
     $.ajax({
         type: "GET",
         url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
         dataType: "json",
-        data: { "zip": $("#zip").val() },
+        data: { "zipCode": $("#zipCode").val() },
         success: function(data, status) {
-            if (typeof data["zip"] === "undefined") {
+            if (typeof data["zipCode"] === "undefined") {
                 $("#zip-error").show();
                 $("#city").html("");
                 $("#lat").html("");

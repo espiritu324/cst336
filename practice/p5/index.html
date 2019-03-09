@@ -47,10 +47,10 @@
             success: function(data,status) {
  
                 if(action == "like"){
-                  data.likes = (parseInt(data.likes).val() + 1).toString();
+                  data.likes = (parseInt(data.likes) + 1).toString();
                 }
                 else if(action == "cancelLike"){
-                  data.likes = (parseInt(data.likes).val() - 1).toString();
+                  data.likes = (parseInt(data.likes) - 1).toString();
                 }
                 else if(action == "dislike"){
                   data.dislikes = (parseInt(data.dislikes) + 1).toString();
