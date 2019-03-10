@@ -2,8 +2,8 @@
 <html>
     <head>
         <title> Sign Up - PHP Web API Version </title>
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
         
         <script>
             /*global $*/
@@ -62,7 +62,7 @@
                         data: {"length" : "10" },
                         success: function(data,status) {
                           
-                          alert(data.suggestedPwd);
+                          $("#passwordSug").html("Suggest Password: "+data.suggestedPwd);
                         
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
@@ -109,25 +109,44 @@
         </script>
     </head>
     
-    <body>
-        <fieldset>
+    <body style="background-color:#b2cfff; text-align: center;">
+        
             <legend>
-                Sign Up
+                <h1>Sign Up</h1>
             </legend>
             
-            First Name: <input type="text" id="firstName" name="firstName" /> <br />
-            Last Name: <input type="text" id="lastName" name="lastName" /> <br />
-            
-            Username: <input type="text" id="username1" />
+            <div style="color:black; font-size:15pt">
+                First Name: </br>
+                <input style="border-radius: 10px;" type="text" id="firstName" name="firstName" /></br></br>
+            </div>
+            <div style="color:black; font-size:15pt">
+            Last Name:</br> 
+            <input style="border-radius: 10px;" type="text" id="lastName" name="lastName" /> <br />
+            </div>
+            <div style="color:black; font-size:15pt">
+            Username:</br>
+            <input type="text" id="username1" />
             <span id="username1Error"></span> <br />
-            
-            Username: <input type="text" id="username2" />
+            </div>
+            <div style="color:black; font-size:15pt">
+            Username:</br>
+            <input type="text" id="username2" />
             <span id="username2Error" class="error"></span> <br />
             <br />
-            
-            Password: <input type="password" id="password"> <br />
+            </div>
+            <div style="color:black; font-size:15pt">
+            Password:</br>
+            <input type="password" id="password"> <span id="passwordSug"></span><br />
             
             <button> Sign up!</button>
-        </fieldset>
+            </div>
     </body>
+    <footer>
+            <hr>
+            CST 336 Internet Programming. 2019 &copy; Espiritu <br />
+            <strong>Disclaimer:</strong> The information on this webpage is used only for
+            academic purposes only. <br />
+             <img id="logo" src="img/Round-CSUMB-logo.png" alt="csumb-logo" />
+            <img id="buddy" src="img/buddy_verified.png" alt="csumb-logo" />
+        </footer>
 </html>

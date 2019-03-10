@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color:blue;
+}
+#first{
+    background-color: black;
+    color:blue;
+    display:flex;
+}
