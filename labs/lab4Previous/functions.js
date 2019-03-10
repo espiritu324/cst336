@@ -1,12 +1,13 @@
-/*global $*/
+/* global $ */
+
 var validZip, validUser, validPass, validConfirm;
 
+$(function() {
     $("#zip-error").hide();
     $("#password-feedback").hide();
     
     $("#state").on("change", function() {
         $.ajax({
-            
             type: "GET",
             url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
             dataType: "json",
@@ -18,15 +19,14 @@ var validZip, validUser, validPass, validConfirm;
                 }
             }
         });
-        alert("hi");
     });
     
-    $("#zipCode").on("change", validateZip);
+    $("#zip").on("change", validateZip);
     $("#username").on("change", validateUser);
     $("#pass").on("change", validatePassword);
     $("#pass-confirm").on("change", confirmPassword);
     
-    $("#submit-btn").on("click", function() {
+    $("#submitButton").on("click", function() {
         // run all the validators (can't return in functions due to AJAX being asynchronous)
         validateZip(); validateUser(); validatePassword(); confirmPassword();
         
@@ -35,36 +35,8 @@ var validZip, validUser, validPass, validConfirm;
             alert("Your account was successfully created!");
     });
     
+});
 
-
-function validateZip() {
-    $.ajax({
-        type: "GET",
-        url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
-        dataType: "json",
-        data: { "zipCode": $("#zipCode").val() },
-        success: function(data, status) {
-            if (typeof data["zipCode"] === "undefined") {
-                $("#zip-error").show();
-                $("#city").html("");
-                $("#lat").html("");
-                $("#long").html("");
-                validZip = false;
-            }
-            else {
-                $("#zip-error").hide();
-                $("#city").html(data.city);
-                $("#lat").html(data.latitude);
-                $("#long").html(data.longitude);
-                validZip = true;
-            }
-        },
-        error: function() {
-            $("#zip-error").show();
-            validZip = false;
-        }
-    });
-}
 
 function validateUser() {
     let available = "Username is available";
@@ -93,6 +65,35 @@ function validateUser() {
                 $("#username-feedback").addClass("text-danger").removeClass("text-success");
                 validUser = false;
             }
+        }
+    });
+}
+
+function validateZip() {
+    $.ajax({
+        type: "GET",
+        url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+        dataType: "json",
+        data: { "zip": $("#zip").val() },
+        success: function(data, status) {
+            if (typeof data["zip"] === "undefined") {
+                $("#zip-error").show();
+                $("#city").html("");
+                $("#lat").html("");
+                $("#long").html("");
+                validZip = false;
+            }
+            else {
+                $("#zip-error").hide();
+                $("#city").html(data.city);
+                $("#lat").html(data.latitude);
+                $("#long").html(data.longitude);
+                validZip = true;
+            }
+        },
+        error: function() {
+            $("#zip-error").show();
+            validZip = false;
         }
     });
 }
