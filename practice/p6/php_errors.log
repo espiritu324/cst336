@@ -1,0 +1,51 @@
+[11-Mar-2019 19:36:36 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 3
+[11-Mar-2019 19:36:36 UTC] PHP Stack trace:
+[11-Mar-2019 19:36:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:40:57 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:40:57 UTC] PHP Stack trace:
+[11-Mar-2019 19:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:40:57 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
+[11-Mar-2019 19:41:29 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php on line 23
+[11-Mar-2019 19:41:29 UTC] PHP Stack trace:
+[11-Mar-2019 19:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:0
+[11-Mar-2019 19:41:29 UTC] PHP   2. array_search() /home/ubuntu/workspace/cst336/practice/p6/api/applyPromoCode.php:23
