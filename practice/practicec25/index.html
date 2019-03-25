@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1> Spring Break Shopping  </h1>
+
+    <table>
+    <tr>
+        <th>Product</th>
+        <th>Unit <br> Price</th>
+        <th> Quantity </th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td id="itemPlaceholder"></td>
+        <td id="itemPrice"></td>
+        <td><input type="text" id="quan" size="5"></td>
+        <td id = "itemTotal"></td>
+    </tr>
+   <tr>
+        <td>Discount</td>
+        <td id="discountPercent"></td>
+        <td id="discountAmount"></td>
+        
+        <td></td>
+    </tr>
+    <tr>
+        <td>Subtotal</td>
+        <td></td>
+        <td></td>
+        <td id="subtotal"></td>
+    </tr>             
+        
+    <tr>
+        <td>Tax (10%)</td>
+        <td></td>
+        <td></td>
+        <td id="tax"></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td id="total"></td>
+    </tr>
+       
+    <tr>
+        <td>Promo Code: </td>
+        <td><input type="text" id="promoCode"></td>
+        <td></td>
+    </tr>
+    
+    </table>
+    
+   
+        
+    <span>I accept the terms of this purchase.</span>
+    <br> 
+    
+    <button id="confirmButton">"CONFIRM PURCHASE"</button>
+
+</body>
+
+<script>
+/* global $*/
+var itemPrice = 0;
+var codeObject = null;
+
+$.ajax({
+
+type: "GET",
+url: "api/getRandomProduct.php",
+dataType: "json",
+success: function(data,status) {
+// alert(data);    
+ $("#itemPlaceholder").html(data.productName);
+ $("#itemPrice").html(data.productPrice);
+ itemPrice = parseInt(data.price);
+ 
+},
+complete: function(data,status) { //optional, used for debugging purposes
+//alert(status);
+}
+
+});//ajax
+    
+    
+$("#quan").on('change',function(){
+   var temp = parseInt($("#quan").val()) * itemPrice;
+   //alert(itemPrice);
+   $("#itemTotal").html(temp); 
+});
+
+$.ajax({
+
+type: "GET",
+url: "api/applyPromoCode.php",
+dataType: "json",
+success: function(data,status) {
+// alert(data);
+codeObject = data;
+},
+complete: function(data,status) { //optional, used for debugging purposes
+//alert(status);
+}
+
+});//ajax
+
+$("#promoCode").on("change", function(){
+    //alert("change");
+    //alert(codeObject);
+    for(let i = 0; i < 6; i++){
+    
+    if($("#promoCode").val() in codeObject[i]){
+        let decimal = codeObject[$("#promoCode").val()];
+        alert(decimal);
+       // let percent = parseInt(codeObject[$("#promoCode").val()]) * 10;
+        // $("#discountPercent").html(percent);
+        // alert(percent);
+    }
+   
+    }
+    //set placeholder not found
+});
+
+
+
+</script>
+
+</html>

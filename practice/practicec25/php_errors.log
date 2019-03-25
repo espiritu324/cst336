@@ -1,0 +1,7 @@
+[25-Mar-2019 19:57:48 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetchOne() in /home/ubuntu/workspace/cst336/practice/practicec25/api/getRandomProduct.php on line 17
+[25-Mar-2019 19:57:48 UTC] PHP Stack trace:
+[25-Mar-2019 19:57:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/practicec25/api/getRandomProduct.php:0
+[25-Mar-2019 19:57:53 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetchONE() in /home/ubuntu/workspace/cst336/practice/practicec25/api/getRandomProduct.php on line 17
+[25-Mar-2019 19:57:53 UTC] PHP Stack trace:
+[25-Mar-2019 19:57:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/practicec25/api/getRandomProduct.php:0
+[25-Mar-2019 20:03:53 UTC] PHP Parse error:  syntax error, unexpected ']', expecting ',' or ';' in /home/ubuntu/workspace/cst336/practice/practicec25/api/getRandomProduct.php on line 23
