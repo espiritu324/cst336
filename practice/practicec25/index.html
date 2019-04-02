@@ -79,7 +79,7 @@ success: function(data,status) {
 // alert(data);    
  $("#itemPlaceholder").html(data.productName);
  $("#itemPrice").html(data.productPrice);
- itemPrice = parseInt(data.price);
+ itemPrice = parseFloat(data.productPrice);
  
 },
 complete: function(data,status) { //optional, used for debugging purposes
