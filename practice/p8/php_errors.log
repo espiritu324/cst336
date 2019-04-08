@@ -1,0 +1,212 @@
+[08-Apr-2019 19:16:11 UTC] PHP Warning:  include(dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 5
+[08-Apr-2019 19:16:11 UTC] PHP Stack trace:
+[08-Apr-2019 19:16:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:16:11 UTC] PHP Warning:  include(): Failed opening 'dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 5
+[08-Apr-2019 19:16:11 UTC] PHP Stack trace:
+[08-Apr-2019 19:16:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:16:11 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 6
+[08-Apr-2019 19:16:11 UTC] PHP Stack trace:
+[08-Apr-2019 19:16:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:19:04 UTC] PHP Warning:  include(dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 5
+[08-Apr-2019 19:19:04 UTC] PHP Stack trace:
+[08-Apr-2019 19:19:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:19:04 UTC] PHP Warning:  include(): Failed opening 'dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 5
+[08-Apr-2019 19:19:04 UTC] PHP Stack trace:
+[08-Apr-2019 19:19:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:19:04 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 6
+[08-Apr-2019 19:19:04 UTC] PHP Stack trace:
+[08-Apr-2019 19:19:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:0
+[08-Apr-2019 19:45:03 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 16
+[08-Apr-2019 19:45:03 UTC] PHP Stack trace:
+[08-Apr-2019 19:45:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:0
+[08-Apr-2019 19:45:37 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 16
+[08-Apr-2019 19:45:37 UTC] PHP Stack trace:
+[08-Apr-2019 19:45:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:0
+[08-Apr-2019 19:45:38 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 16
+[08-Apr-2019 19:45:38 UTC] PHP Stack trace:
+[08-Apr-2019 19:45:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:0
+[08-Apr-2019 20:09:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 13
+[08-Apr-2019 20:16:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 6' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:17:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 6' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:17:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:17:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 6' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:17:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:17:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 6' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:18:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:18:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 13
+[08-Apr-2019 20:18:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 7' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:18:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:18:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:18:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:19:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:19:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 4' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:19:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:19:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 4' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:19:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 2' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:20:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 5' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:20:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 2' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:20:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:20:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 2' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:20:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 13
+[08-Apr-2019 20:25:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:25:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:25:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:26:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 7' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:26:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:27:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:27:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/check_word.php on line 12
+[08-Apr-2019 20:28:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 5' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:28:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 4' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:32:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 2' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:32:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 3' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:33:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 7' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:33:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 6' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11
+[08-Apr-2019 20:33:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE word_id = 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p8/api/get_word_api.php on line 11

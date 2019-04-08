@@ -1,0 +1,9 @@
+[03-Apr-2019 00:26:02 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php on line 3
+[03-Apr-2019 00:26:02 UTC] PHP Stack trace:
+[03-Apr-2019 00:26:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php:0
+[03-Apr-2019 00:26:02 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php on line 3
+[03-Apr-2019 00:26:02 UTC] PHP Stack trace:
+[03-Apr-2019 00:26:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php:0
+[03-Apr-2019 00:26:02 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php on line 4
+[03-Apr-2019 00:26:02 UTC] PHP Stack trace:
+[03-Apr-2019 00:26:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/addProductAPI.php:0
