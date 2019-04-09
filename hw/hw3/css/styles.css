@@ -1,0 +1,41 @@
+body {
+    text-align:center;
+    background-color: #a0e5ff;
+    background-size: cover;
+}
+h1{
+    color:black;
+    font-size: 45pt;
+    background-color:white;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+#groomName{
+    font-size: 20pt;
+    color:black;
+    
+}
+#brideName{
+    font-size: 20pt;
+    color:black;
+}
+#lastName{
+    font-size: 21pt;
+    color:black;
+}
+#cell{
+    float: left;
+    padding:30px;
+}
+#venueImages{
+    margin: auto 0;
+    display:flex;
+}
+#q1, #q2, #q6{
+    background-color:grey;
+}
+#submitButton{
+    background-color:#5194ff;
+    color:white;
+    font-size:25pt;
+}

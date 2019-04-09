@@ -8,100 +8,65 @@
     </head>
     
     <body>
-        <h1>Wedding Questions</h1>
-        <div id="party"></div>
-        <span id="groomName">First name of Groom?</span></br>
-        <input type="text" id="q1"></br></br>
-        <span id="brideName">First name of Bride?</span></br>
-        <input type="text" id="q2"></br></br>
-        <span id="lastName">Last name of Groom?</span></br>
-        <input type="text" id="q6"></br></br>
+        <h1>Wedding Registery</h1>
+        <div id="food">Please Pick your meal option: </div>
+        <div id="options"></div>
+        <div id="guestQuestion">Which Guest are you? </div>
+        <select name="guestChoices" id="guestChoices">        
+                        <option> Select One </option>
+       </select>
+       </br></br>
+        <button id="submitButton" >Submit</button>
         
-        <span id="quan">Number of People attending?</span>
-        <input type="radio" name="q3" id="25people" value="25"><label for="25people">25 </label>
-        <input type="radio" name="q3" id="50people" value="50"><label for="50people">50 </label>
-        <input type="radio" name="q3" id="100people" value="100"><label for="100people">100</label>
-        <input type="radio" name="q3" id="200people" value="200"><label for="200people">200</label>
-        </br></br>
-        
-        <span id="meal">Select Type of meal desired for reception.</span>
-        <select id="q4">
-            <option value="">Select One</option>
-            <option>Casual Lunch Buffet</option>
-            <option>Fancy Dinner Buffet</option>
-            <option>Casual Lunch Plated Meal</option>
-            <option>Fancy Dinner Plated Meal</option>
-        </select>
-        </br>
-        <div id="mealSelection"></div>
-        
-        <span id="venueChoice">Choose your venue: </span></br>
-        <div id="venueImages">
-        <div id="cell"><input type="image" src="img/Disneyland_Resort_Wedding.jpg" alt="Disneyland Resort"
-        class="active" id="DisneylandResort"></br>Disneyland Resort</div>
-        <div id="cell"><input type="image" src="img/Disneyland_Wedding.jpg" alt="Disneyland" class="active" id="Disneyland"></br>Disneyland Castle</div>
-        <div id="cell"><input type="image" src="img/Fairview_Napa_Wedding.jpg" alt="Napa" class="active" id="Napa"></br>Fairview Napa</div>
-        <div id="cell"><input type="image" src="img/Hawaii_Wedding.jpg" alt="Hawaii" class="active" id="Hawaii"></br>Hawaii</div>
-        </div>
-        </br>
-        <div id = "q5_feedback"></div>
-        
-        <div id="totalPrice"></div>
-        
-        
-        <button id="submitButton"> Submit </button>
-        <!--<script src="js/functions.js"></script>-->
-                <script>/*global $*/
-            var partyNames, numPeople, mealPlan, mealPrice, mealChoice;
-            var lunchBuffet = 50, dinnerBuffet = 120, lunchPlate = 35, dinnerPlate = 75, venuePrice=0, totalPrice=0;
-        
-                     let q5_response = "";
-                           $(".active").on( "click", function() {
-                                  $(".active").css("background-color","");
-                                  $(this).css("background-color","blue");
-                                  $(this).css("padding","10px");
-                                  //alert($(this).attr("id"));
-                                  q5_response = $(this).attr("id");
-                            });
-                
-         $("#submitButton").on( "click", function() {
-             
-            partyNames = $("#q1").val() + " & " + $("#q2").val() + " " +$("#q6").val()+  "'s Wedding Plans";
-             $("#party").html("<h2>"+partyNames+"</h2>");
-             
-             numPeople = $("input[name=q3]:checked").val();
-             //alert(numPeople);
-             
-             mealPlan =  $("#q4").val();
-             if(mealPlan=="Casual Lunch Buffet"){
-                 mealPrice = lunchBuffet * numPeople;
-             }else if(mealPlan=="Fancy Dinner Buffet"){
-                 mealPrice = dinnerBuffet * numPeople;
-             }else if(mealPlan=="Casual Lunch Plated Meal"){
-                 mealPrice = lunchPlate * numPeople;
-             }else if(mealPlan=="Fancy Dinner Plated Meal"){
-                 mealPrice = dinnerPlate * numPeople;
-             }
-             //alert(mealPrice);
-              mealChoice = "You selected: " + mealPlan + " at the price of $" + mealPrice/numPeople + " each with a total of $" + 
-              mealPrice + " for you recepetion";
-               $("#mealSelection").html(mealChoice);
-              
-             if(q5_response=="DisneylandResort"){
-                 venuePrice = 15000;
-             }else if(q5_response=="Disneyland"){
-                 venuePrice = 106000;
-             }else if(q5_response=="Napa"){
-                 venuePrice = 8000;
-             }else if(q5_response=="Hawaii"){
-                 venuePrice = 15000;
-             } 
-             totalPrice = mealPrice + venuePrice;
-              $("#totalPrice").html("Your total wedding package would cost: $"+totalPrice);
-         });</script>
-        
+        <div id="final"></div>
     </body>
     
+    <script>
+    /*global $*/
+   
+        $(document).ready(function(){
+                     $.ajax({
+                    type: "GET",
+                    url: "api/getGuest.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                    //   alert(data.questionText);
+                        for(let i = 0; i < data.length; i++){
+                        $("#guestChoices").append("<option value=" + data[i]["firstName"]  +data[i]["lastName"] + ">" + data[i]["firstName"] + " " + data[i]["lastName"] + "---" + data[i]["gender"] + "</option>");
+                        }
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    // alert(status);
+                    }
+                    });//ajax
+                    
+                    
+                    $.ajax({
+                    type: "GET",
+                    url: "api/getFood.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                    //   alert(data.questionText);
+                        for(let i = 0; i < data.length; i++){
+                        $("#options").append("<input type='radio' name='foodOption'  value=" + data[i]["price"] +">" + data[i]["foodType"] + " $" + data[i]["price"]+ "</label></br>");
+                            }
+                            
+                        
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    // alert(status);
+                    }
+                    });//ajax
+                    
+            $("#submitButton").on("click", function(){
+                 let priceGiven = $("input[name=foodOption]:checked").val();
+                 let guestGiven = $("#guestChoices").val();
+                //  alert(priceGiven);
+                 $("#final").html("Guest: " + guestGiven + " </br> Food Option Selected: $" + priceGiven);
+            });
+                
+            });//documentReady
+        </script>
     
     <footer>
         </br>
