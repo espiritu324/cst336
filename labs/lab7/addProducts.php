@@ -2,12 +2,14 @@
 session_start();
 
 //checks whether user has logged in
-if(!isset($_SESSION['adminName'])){
+if (!isset($_SESSION['adminName'])) {
     
-    head('location: login.html');
+    header('location: login.html'); //sends users to login screen if they haven't logged in
     
 }
+
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,13 +32,13 @@ if(!isset($_SESSION['adminName'])){
         </Select><br>
         
         <button id="submitButton">Add Product</button>
-        
+        <span id="totalProducts"></span>
     </body>
     
     <script>
         $.ajax({
                     type: "GET",
-                    url: "../lab6/api/getCategory.php",
+                    url: "../lab6/api/getCategories.php",
                     dataType: "json",
                     success: function(data, status) {
                         data.forEach(function(key) {
@@ -59,9 +61,7 @@ if(!isset($_SESSION['adminName'])){
                         
                     },
                     success: function(data, status) {
-                        data.forEach(function(key) {
-                            $("#catId").append("<option value=" + key["catId"] + ">" + key["catName"] + "</option>");
-                        });
+                        $("#totalProducts").html(data.totalproducts + " Products");
                     }
                 }); 
         });

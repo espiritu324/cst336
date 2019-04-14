@@ -1,0 +1,46 @@
+[09-Apr-2019 23:47:22 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 16
+[09-Apr-2019 23:47:22 UTC] PHP Parse error:  syntax error, unexpected '$host' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 5
+[09-Apr-2019 23:47:22 UTC] PHP Stack trace:
+[09-Apr-2019 23:47:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:47:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 16
+[09-Apr-2019 23:47:46 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 20
+[09-Apr-2019 23:47:46 UTC] PHP Stack trace:
+[09-Apr-2019 23:47:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:47:47 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 20
+[09-Apr-2019 23:47:47 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 16
+[09-Apr-2019 23:47:47 UTC] PHP Stack trace:
+[09-Apr-2019 23:47:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:01 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 20
+[09-Apr-2019 23:48:01 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 16
+[09-Apr-2019 23:48:01 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:02 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 16
+[09-Apr-2019 23:48:02 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:02 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 20
+[09-Apr-2019 23:48:15 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 17
+[09-Apr-2019 23:48:15 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:16 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 19
+[09-Apr-2019 23:48:16 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 19
+[09-Apr-2019 23:48:16 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 17
+[09-Apr-2019 23:48:16 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:20 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:48:20 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 17
+[09-Apr-2019 23:48:20 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:21 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:48:21 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php on line 17
+[09-Apr-2019 23:48:21 UTC] PHP Stack trace:
+[09-Apr-2019 23:48:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getGuest.php:0
+[09-Apr-2019 23:48:33 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:48:34 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:48:51 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:49:29 UTC] PHP Parse error:  syntax error, unexpected 'C' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 8
+[09-Apr-2019 23:50:00 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 17
+[09-Apr-2019 23:50:00 UTC] PHP Stack trace:
+[09-Apr-2019 23:50:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php:0
+[09-Apr-2019 23:50:05 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php on line 16
+[09-Apr-2019 23:50:05 UTC] PHP Stack trace:
+[09-Apr-2019 23:50:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/api/getFood.php:0

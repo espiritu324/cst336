@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+    <div id="give"> give </div>
+    
+    </body>
+    
+    <script>
+    /*global $*/
+        
+            
+            $.ajax({
+                    type: "GET",
+                    url: "random.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                    alert(status);
+                    $("#give").html(data);
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    alert(status);
+                    }
+                    });//ajax
+         
+    </script>
+</html>
