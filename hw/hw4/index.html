@@ -1,29 +1,80 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title> Wedding Stuff </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
-    <div id="give"> give </div>
     
+    <body>
+        <h1>Wedding Registery</h1>
+        <div id="food">Please Pick your meal option: </div>
+        <div id="options"></div>
+        <div id="guestQuestion">Which Guest are you? </div>
+        <select name="guestChoices" id="guestChoices">        
+                        <option> Select One </option>
+       </select>
+       </br></br>
+        <button id="submitButton" >Submit</button>
+        
+        <div id="final"></div>
     </body>
     
     <script>
     /*global $*/
-        
-            
-            $.ajax({
+   
+        $(document).ready(function(){
+                     $.ajax({
                     type: "GET",
-                    url: "random.php",
+                    url: "api/getGuest.php",
                     dataType: "json",
                     success: function(data,status) {
-                    alert(status);
-                    $("#give").html(data);
+                    //   alert(data.questionText);
+                        for(let i = 0; i < data.length; i++){
+                        $("#guestChoices").append("<option value=" + data[i]["firstName"]  +data[i]["lastName"] + ">" + data[i]["firstName"] + " " + data[i]["lastName"] + "---" + data[i]["gender"] + "</option>");
+                        }
                     },
                     complete: function(data,status) { //optional, used for debugging purposes
-                    alert(status);
+                    // alert(status);
                     }
                     });//ajax
-         
-    </script>
+                    
+                    
+                    $.ajax({
+                    type: "GET",
+                    url: "api/getFood.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                    //   alert(data.questionText);
+                        for(let i = 0; i < data.length; i++){
+                        $("#options").append("<input type='radio' name='foodOption'  value=" + data[i]["price"] +">" + data[i]["foodType"] + " $" + data[i]["price"]+ "</label></br>");
+                            }
+                            
+                        
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    // alert(status);
+                    }
+                    });//ajax
+                    
+            $("#submitButton").on("click", function(){
+                 let priceGiven = $("input[name=foodOption]:checked").val();
+                 let guestGiven = $("#guestChoices").val();
+                //  alert(priceGiven);
+                 $("#final").html("Guest: " + guestGiven + " </br> Food Option Selected: $" + priceGiven);
+            });
+                
+            });//documentReady
+        </script>
+    
+    <footer>
+        </br>
+            <hr>
+            CST 336 Internet Programming. 2019 &copy; Espiritu <br />
+            <strong>Disclaimer:</strong> The information on this webpage is used only for
+            academic purposes only. <br />
+             <img id="logo" src="img/Round-CSUMB-logo.png" alt="csumb-logo" />
+            <img id="buddy" src="img/buddy_verified.png" alt="csumb-logo" />
+    </footer>
 </html>
