@@ -23,12 +23,12 @@
                         // alert(data[0].iamgeURL);
                         $("#favorites").html("");
                         data.forEach(function(i){
-                            $("#favorites").append("<img width='200' src='" +i.imageURL + "'>");
+                            $("#favorites").append("<img width='200' src='" +i.imageURL + "'></br>");
                         });    
                     
                     },
                     complete: function(data, status) { //optional, used for debugging purposes
-                      alert(status);
+                    //   alert(status);
                     }
                   });//ajax
             
@@ -49,7 +49,7 @@
                         data.forEach(function(i){
                             // $("#keywords").append("<a onclick='displayFavorites(this)' href='#'>" +i.keyword + "</a></br>");
                             
-                            $("#keywords").append("<a class='favorites' href='#'>" + i.keyword + "</a>");
+                            $("#keywords").append("<a class='favorites' href='#'>" + i.keyword + "</a></br>");
                         });    
                     
                     },

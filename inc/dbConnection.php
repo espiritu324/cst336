@@ -1,5 +1,5 @@
 <?php
-
+// $dbName = "herokuapp";
     function getDatabaseConnection($dbName) {
     
         $host = "localhost";
@@ -13,8 +13,10 @@
            $dbName = substr($url["path"], 1);
            $username = $url["user"];
            $password = $url["pass"];
+           alert("hello");
         }
-        
+                   alert("hello");
+
         $dbConn = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
         $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         
