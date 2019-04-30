@@ -153,3 +153,71 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php(5): getDatabaseConnection('heroku_ab6148f3...')
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:05:49 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:05:49 UTC] PHP Stack trace:
+[28-Apr-2019 08:05:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:05:49 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:07 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:07 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:07 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:19 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:19 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:19 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:24 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:24 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:24 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:29 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:29 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:29 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:30 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:30 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:30 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:06:48 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:06:48 UTC] PHP Stack trace:
+[28-Apr-2019 08:06:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:06:48 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:07:02 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:07:02 UTC] PHP Stack trace:
+[28-Apr-2019 08:07:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:07:02 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:07:05 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:07:05 UTC] PHP Stack trace:
+[28-Apr-2019 08:07:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:07:05 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:07:33 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:07:33 UTC] PHP Stack trace:
+[28-Apr-2019 08:07:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:07:33 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:07:34 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:07:34 UTC] PHP Stack trace:
+[28-Apr-2019 08:07:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:07:34 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:07:37 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:07:37 UTC] PHP Stack trace:
+[28-Apr-2019 08:07:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:07:37 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:08:10 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:08:10 UTC] PHP Stack trace:
+[28-Apr-2019 08:08:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:08:10 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:08:20 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:08:20 UTC] PHP Stack trace:
+[28-Apr-2019 08:08:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:08:20 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:08:22 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:08:22 UTC] PHP Stack trace:
+[28-Apr-2019 08:08:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:08:22 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:09:08 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:09:08 UTC] PHP Stack trace:
+[28-Apr-2019 08:09:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:09:08 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
+[28-Apr-2019 08:09:15 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18
+[28-Apr-2019 08:09:15 UTC] PHP Stack trace:
+[28-Apr-2019 08:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:0
+[28-Apr-2019 08:09:15 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/labs/lab8/api/favoritesAPI.php:5
