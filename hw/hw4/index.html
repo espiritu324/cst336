@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title> API Movie Search </title>
+        <title> API Movie Search</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
        
@@ -14,13 +14,18 @@
         <div id="random" name="random">Random </div>
         <input type="text" id="search" />
          <button class="btn btn-primary" id="searchBtn">Search</button>
+         <button class="btn btn-primary" id="showImages">Show Posters</button>
+         <div id="test" name="test">Test </div>
     </body>
    
   
     <footer>
         <script>
         /*global $*/
-           $("#searchBtn").on("click", function(){
+        var title;
+        var url;
+        
+         $("#searchBtn").on("click", function(){
                 function search(){
                         $.ajax({
                             type:"GET",
@@ -30,9 +35,10 @@
                                 "keyword":$("#search").val()
                             },
                             success: function(data, status){
-                               alert(status);
-                               $("#random").html(data["Title"]);
-                               
+                            //   alert(status);
+                              $("#random").html(data["Title"]);
+                              title = data["Title"];
+                              url = data["Poster"];
                             },
                             complete: function(data, status){
                                 
@@ -41,6 +47,32 @@
                     }// search end
                     
                     search();
+            });
+        
+           $("#showImages").on("click", function(){
+                function show(){
+                    alert(url);
+                        $.ajax({
+                            type:"GET",
+                            url:"api/store.php",
+                            dataType:"json",
+                            data:{
+                                "url":url,
+                                "title":title
+                            },
+                            success: function(data, status){
+                              alert(status);
+                                data.forEach(function(i){
+                                     $("#test").append("<img width='200' src='" +i.imageURL + "'></br>");
+                                }); 
+                            },
+                            complete: function(data, status){
+                                alert(status);
+                            }
+                        });
+                    }// search end
+                    
+                    show();
             });
         </script>
     </footer>
