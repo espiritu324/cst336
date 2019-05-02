@@ -1,3 +1,9 @@
 [28-Apr-2019 06:53:41 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
 [28-Apr-2019 06:53:47 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
 [28-Apr-2019 06:53:49 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[02-May-2019 04:22:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'https://despiritu-cst336.herokuapp.com/labs/lab7/login.html'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/inc/dbConnection.php(3): getDatabaseConnection('https://despiri...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 18

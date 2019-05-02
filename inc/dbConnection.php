@@ -1,5 +1,6 @@
 <?php
-// $dbName = "herokuapp";
+// $dbName = "https://despiritu-cst336.herokuapp.com/labs/lab7/login.html";
+// getDatabaseConnection($dbName);
     function getDatabaseConnection($dbName) {
     
         $host = "localhost";
@@ -13,14 +14,10 @@
            $dbName = substr($url["path"], 1);
            $username = $url["user"];
            $password = $url["pass"];
-        //   alert("hello");
         }
-                //   alert("hello");
-
         $dbConn = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
         $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-        
         return $dbConn;
-    
+        // print_r($dbName);
     }
 ?>

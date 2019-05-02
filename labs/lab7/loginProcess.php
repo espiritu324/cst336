@@ -5,7 +5,7 @@ session_start(); //starts or resumes an existing session
 
 include '../../inc/dbConnection.php';
 
-$conn = getDatabaseConnection("ottermart");
+$conn = getDatabaseConnection("om_admin");
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
