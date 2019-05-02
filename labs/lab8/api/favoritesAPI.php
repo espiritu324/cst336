@@ -10,16 +10,16 @@
  
   switch ($action) {
         
-        case "add":    $sql = "INSERT INTO lab8_pixabay (imageURL, keyword) VALUES (:favorite, :keyword)";
+        case "add":    $sql = "INSERT INTO favoritepix (imageURL, keyword) VALUES (:favorite, :keyword)";
                        $np[':keyword'] = $_GET['keyword'];
                        $np[':favorite'] = $_GET['favorite'];
                        break;
-        case "delete":  $sql = "DELETE FROM lab8_pixabay WHERE imageURL = :favorite";
+        case "delete":  $sql = "DELETE FROM favoritepix WHERE imageURL = :favorite";
                         $np[':favorite'] = $_GET['favorite'];
                         break;
-        case "keyword": $sql = "SELECT DISTINCT(keyword) FROM lab8_pixabay";
+        case "keyword": $sql = "SELECT DISTINCT(keyword) FROM favoritepix";
                         break;
-        case "favorites": $sql = "SELECT imageURL FROM `lab8_pixabay` WHERE keyword=:keyword"; 
+        case "favorites": $sql = "SELECT imageURL FROM `favoritepix` WHERE keyword=:keyword"; 
                         $np[':keyword'] = $_GET['keyword'];
                         break;
                         
