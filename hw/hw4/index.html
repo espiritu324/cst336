@@ -10,12 +10,24 @@
     </head>
     
     
-    <body>
-        <div id="random" name="random">Random </div>
-        <input type="text" id="search" />
-         <button class="btn btn-primary" id="searchBtn">Search</button>
-         <button class="btn btn-primary" id="showImages">Show Posters</button>
-         <div id="test" name="test">Test </div>
+    <body style="background-color:#ededed">
+        </br>
+        <h1 class="jumbotron" style="text-align:center; background-color:#7ca1ff">Movie Search</h1>
+        </br></br></br>
+        <div id="searchBox" style="text-align:center">
+        <input type="text" id="search" class="rounded"/>
+        </br></br></br>
+         <button class="btn btn-dark" id="searchBtn">Search</button></br></br>
+         <button class="btn btn-dark" id="showImages">Show Posters</button>
+         </div></br>
+         <div id="poster" name="poster" ></div>
+        <h2 id="title" name="title" style="text-align:center"> </h2>
+        <div id="award" name="award" style="text-align:center"> </div>
+        
+        <div id="posterHead" style="text-align:center"></div>
+        <div id="test" name="test" class="row mt-2" style="text-align:center"></div>
+
+
     </body>
    
   
@@ -23,7 +35,6 @@
         <script>
         /*global $*/
         var title;
-        var url;
         
          $("#searchBtn").on("click", function(){
                 function search(){
@@ -36,9 +47,11 @@
                             },
                             success: function(data, status){
                             //   alert(status);
-                              $("#random").html(data["Title"]);
-                              title = data["Title"];
-                              url = data["Poster"];
+                              $("#title").html(data["Title"]);
+                              $("#award").html(data["Awards"]);
+                              $("#poster").append("<img width='300' class='rounded mx-auto d-block' src='" +data["Poster"] + "'></br>");
+                             
+                               
                             },
                             complete: function(data, status){
                                 
@@ -50,30 +63,34 @@
             });
         
            $("#showImages").on("click", function(){
+               $("#posterHead").append("<h1>Recorded Posters</h1>");
                 function show(){
-                    alert(url);
                         $.ajax({
                             type:"GET",
                             url:"api/store.php",
                             dataType:"json",
                             data:{
-                                "url":url,
-                                "title":title
                             },
                             success: function(data, status){
-                              alert(status);
-                                data.forEach(function(i){
-                                     $("#test").append("<img width='200' src='" +i.imageURL + "'></br>");
-                                }); 
+                            //   alert(data.length);
+                                for(var i=0; i<data.length; i++){
+                                    var temp = data[i]["imageURL"];
+                                    var tempT = data[i]["title"];
+                                     $("#test").append("<div class='col-sm-4'><img width='200' src='" +temp + "'></br><h6>" + tempT + "</h6></div></br>");
+                                    //  $("#test").append("</br>" + tempT + "</div></br>");
+                                     
+                                    //  alert(data[i]["imageURL"]);
+                                } 
                             },
                             complete: function(data, status){
-                                alert(status);
+                                // alert(status);
                             }
                         });
                     }// search end
                     
                     show();
             });
+        
         </script>
     </footer>
     

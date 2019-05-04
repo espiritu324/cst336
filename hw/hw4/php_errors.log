@@ -50,3 +50,162 @@
 [01-May-2019 00:00:31 UTC] PHP Stack trace:
 [01-May-2019 00:00:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:0
 [01-May-2019 00:00:31 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:5
+[04-May-2019 06:09:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 13
+[04-May-2019 06:13:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTg' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 13
+[04-May-2019 06:14:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, https://m.media-amazon.com/images/M/MV5BMzA2NDkwODA' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 13
+[04-May-2019 06:15:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, https://m.media-amazon.com/images/M/MV5BMzA2NDkwODA' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 13
+[04-May-2019 06:15:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, https://m.media-amazon.com/images/M/MV5BMzA2NDkwODA' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 13
+[04-May-2019 06:16:40 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 27
+[04-May-2019 06:16:40 UTC] PHP Stack trace:
+[04-May-2019 06:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:16:48 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 27
+[04-May-2019 06:16:48 UTC] PHP Stack trace:
+[04-May-2019 06:16:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:17:46 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 27
+[04-May-2019 06:17:46 UTC] PHP Stack trace:
+[04-May-2019 06:17:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:20:07 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 30
+[04-May-2019 06:20:07 UTC] PHP Stack trace:
+[04-May-2019 06:20:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:20:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 30
+[04-May-2019 06:20:10 UTC] PHP Stack trace:
+[04-May-2019 06:20:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:20:58 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 30
+[04-May-2019 06:20:58 UTC] PHP Stack trace:
+[04-May-2019 06:20:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:20:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 10
+[04-May-2019 06:21:40 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 30
+[04-May-2019 06:21:40 UTC] PHP Stack trace:
+[04-May-2019 06:21:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:21:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 10
+[04-May-2019 06:22:11 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:22:11 UTC] PHP Stack trace:
+[04-May-2019 06:22:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:22:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 10
+[04-May-2019 06:22:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 10
+[04-May-2019 06:24:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/store.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/store.php on line 10
+[04-May-2019 06:24:36 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:24:36 UTC] PHP Stack trace:
+[04-May-2019 06:24:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:25:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:25:51 UTC] PHP Stack trace:
+[04-May-2019 06:25:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:32:46 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:32:46 UTC] PHP Stack trace:
+[04-May-2019 06:32:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:32:47 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:32:47 UTC] PHP Stack trace:
+[04-May-2019 06:32:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:33:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 28
+[04-May-2019 06:33:23 UTC] PHP Stack trace:
+[04-May-2019 06:33:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:0
+[04-May-2019 06:33:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://m.media-amazon.com/images/M/MV5BMTQ0NjkyODgxOF5BMl5BanBnXkFtZTgwMTcyODYyMDE@.' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 34
+[04-May-2019 06:34:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, https://m.media-amazon.com/images/M/MV5BMzA2NDkwODA' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 34
+[04-May-2019 06:34:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:37:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(29): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 29
+[04-May-2019 06:37:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(29): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 29
+[04-May-2019 06:37:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(29): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 29
+[04-May-2019 06:37:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(29): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 29
+[04-May-2019 06:37:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(29): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 29
+[04-May-2019 06:38:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:38:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:38:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:38:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 31
+[04-May-2019 06:40:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, 'temp')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(40): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 40
+[04-May-2019 06:40:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'America: The Winter Soldier, 'temp')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php(40): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getMovie.php on line 40

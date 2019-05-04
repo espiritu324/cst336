@@ -1,7 +1,9 @@
 <?php
 
 //https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e&image_type=photo&orientation=horizontal&safesearch=true&per_page=100
-
+ include '../../../inc/dbConnection.php';
+ $conn = getDatabaseConnection("c9");
+ 
 $keyword = $_GET['keyword'];
 // $keyword = shazam;
 
@@ -21,10 +23,30 @@ $jsonData = curl_exec($curl);
 $err = curl_error($curl);
 curl_close($curl);
 
-// echo json_encode($jsonData);
 
 $data = json_decode($jsonData, true);  //from JSON format to an Array
+$title = strval($data["Title"]);
+$image = strval($data["Poster"]);
+// echo($title);
+
+
+$sqlTemp = "SELECT * FROM savedMovies WHERE title LIKE '%$title%'";
+$stmt = $conn->prepare($sqlTemp);
+$stmt->execute();
+$resp = $stmt->fetch(PDO::FETCH_ASSOC);
+if($resp==null){
+      $sql = "INSERT INTO `savedMovies` (`title`, `imageURL`) VALUES ('$title', '$image')";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute();
+}
+
+
+
+
 echo json_encode($data);
+
+
+
 
 // //print_r($data);
 

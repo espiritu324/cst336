@@ -4,16 +4,9 @@
  include '../../../inc/dbConnection.php';
  $conn = getDatabaseConnection("c9");
 
- $title = $_GET['title'];
- $url = $_GET['url'];
-
-
-$sql = "INSERT INTO `savedMovies` (`title`, `imageURL`) VALUES ($title, $url)";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
-
-$sql2 = "SELECT imageURL FROM `savedMovies`";
-$stmt = $conn->prepare($sqls);
+ 
+$sql2 = "SELECT * FROM `savedMovies`";
+$stmt = $conn->prepare($sql2);
 $stmt->execute();
 $resp = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
