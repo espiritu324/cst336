@@ -27,3 +27,6 @@ Stack trace:
 [02-May-2019 04:31:31 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/cst336/labs/lab9/index.php on line 63
 [02-May-2019 04:31:31 UTC] PHP Stack trace:
 [02-May-2019 04:31:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab9/index.php:0
+[05-May-2019 00:27:20 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/cst336/labs/lab9/index.php on line 63
+[05-May-2019 00:27:20 UTC] PHP Stack trace:
+[05-May-2019 00:27:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab9/index.php:0

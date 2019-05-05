@@ -57,11 +57,6 @@
         <?= displayImagesUploaded() ?>
         
         
-        <?php
         
-        
-        $conn = dbConnection();
-        
-        ?>
     </body>
 </html>
